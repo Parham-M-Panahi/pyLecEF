@@ -1,0 +1,56 @@
+1. Lists are a compound data type. they can contain different data types, and their size can change.
+
+>>> ls = [34.5, 0, True, 'str']
+>>> numbers = [1, 3, 4, 6]
+>>> numbers
+[1, 3, 4, 6]
+-------------------------------------------------------------------------------
+2. lists can be indexed and sliced (list indexing takes constant time)
+
+>>> numbers[0] # indexing returns the item
+1
+>>> numbers[-1]
+6
+>>> numbers[2:] # slicing returns a new list
+[4, 6]
+-------------------------------------------------------------------------------
+3. lists support + operator as concatenation
+
+>>> numbers + [8, 10]
+[1, 3, 4, 6, 8, 10]
+-------------------------------------------------------------------------------
+4. unlike strings, lists are mutable
+
+>>> numbers[0] = 100
+>>> numbers
+[100, 3, 4, 6]
+-------------------------------------------------------------------------------
+5. new lists can be assigned to slices
+
+>>> letters = ['a', 'b', 'c', 'd', 'e', 'f']
+>>> letters
+['a', 'b', 'c', 'd', 'e', 'f']
+>>> letters[1:3] = ['x', 'y'] # replace some values
+>>> letters
+['a', 'x', 'y', 'd', 'e', 'f']
+>>> letters[1:3] = [] # remove some values
+>>> letters
+['a', 'd', 'e', 'f']
+>>> letters[:] = [] # remove all the elements in the array
+>>> letters
+[]
+-------------------------------------------------------------------------------
+6. built-in function len() returns the number of elements in the list
+
+>>> numbers = [1, 2, 4]
+>>> len(numbers)
+3
+-------------------------------------------------------------------------------
+7. you can nest lists to create matrices
+
+>>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> matrix[0][0]
+1
+>>> matrix[1][2]
+6
+-------------------------------------------------------------------------------
