@@ -1,0 +1,6 @@
+this is a sample text.
+# this line starts with a hashtag
+
+lsat line was empty
+next line looks line a python command
+>>> print('hi')
