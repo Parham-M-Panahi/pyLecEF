@@ -31,6 +31,16 @@ def not_bad(s):
     # TODO: code goes here
     return
 
+# C. remove_adjacent
+# Given a list of numbers, return a list where
+# all adjacent equal elements have been reduced to a single element,
+# so [1, 2, 2, 3] returns [1, 2, 3]. you may create a new list or 
+# modify the passed in list.
+def remove_adjacent(nums):
+    # TODO: code goes here
+    return
+
+
 # The test function simply tests your code,
 # You don't need to change it or anything,
 # You can read it if you like.
@@ -55,6 +65,13 @@ def main():
     test(not_bad('This dinner is not that bad'), 'This dinner is good')
     test(not_bad('This tea is not hot'), 'This tea is not hot')
     test(not_bad("It's bad yet not"), "It's bad yet not")
+    print()
+
+    print('C. remove_adjacent')
+    test(remove_adjacent([1, 2, 2, 3]), [1, 2, 3])
+    test(remove_adjacent([2, 2, 3, 3, 3]), [2, 3])
+    test(remove_adjacent([]), [])
+    print()
 
 
 if __name__ == '__main__':
