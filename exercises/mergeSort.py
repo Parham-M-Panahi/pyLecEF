@@ -21,6 +21,7 @@ def main():
   # Be sure to test your code here
   # call it a few time on different lists, and print the result.
   # GOOD LUCK
+  pass
 
 if __name__ == '__main__':
   main()
